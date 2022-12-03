@@ -3,7 +3,7 @@ export default function Timeline({ orientation = "left", children }) {
     return <div className="flex">
         <div className={orientation == "left" ? "timeline tl-left" : "timeline tl-right"}>
             {children.map(c=>
-            <div className="date">
+            <div key={c.id} className="date">
                 <div className="date-content ">
                     {c}
                 </div>

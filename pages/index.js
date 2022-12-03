@@ -3,6 +3,7 @@ import Footer from '../components/footer'
 import Layout from '../components/layout'
 import Timeline from '../components/timeline'
 
+
 export default function Resume() {
     return (
         <>
@@ -149,7 +150,7 @@ export default function Resume() {
 
                     <div className="text-gray-300 bg-gray-700">
                         <svg viewBox="0 40 800 70">
-                            <path fill="currentColor" fill-opacity="1" d="M 0 60 C 60 150 600 0 800 100 L 800 0 L 0 0 L 0 50"></path>
+                            <path fill="currentColor" fillOpacity="1" d="M 0 60 C 60 150 600 0 800 100 L 800 0 L 0 0 L 0 50"></path>
                         </svg>
                     </div>
 

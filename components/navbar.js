@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 
 
-export default function NavigatorBar({}) {
+export default function NavigatorBar({ }) {
     const router = useRouter();
 
     return <><Head>
@@ -18,11 +18,12 @@ export default function NavigatorBar({}) {
     </Head>
         <header className="z-50 w-full fixed bg_gradient_hm text-gray-100 border-gray-400 border-b">
             <div className="mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-                <a href="/" className="flex title-font font-medium items-center mb-4 md:mb-0">
-
-                    <Image src="/android-chrome-512x512.png" alt="Dylan Mamié" width="50" height="50" />
-                    <span className="ml-3 text-xl"></span>
-                </a>
+                <Link href="/" className="flex title-font font-medium items-center mb-4 md:mb-0">
+                    <a>
+                        <Image src="/android-chrome-512x512.png" alt="Dylan Mamié" width="50" height="50" />
+                        <span className="ml-3 text-xl"></span>
+                    </a>
+                </Link>
                 <nav className="md:ml-auto flex flex-wrap items-center text-xl justify-center">
                     <Link href="/"><a className={router.pathname == "/" ? "mx-8 text-green-200" : "mx-8 hover:text-green-200"}>Resume</a></Link>
                     {/* <Link href="/resume"><a className={router.pathname == "/resume" ? "mr-8 text-green-200" : "mr-8 hover:text-green-200"}>Resume</a></Link> */}
