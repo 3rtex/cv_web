@@ -33,7 +33,7 @@ export default function Portfolio() {
 
                 <div id="content" className="bg-gray-300" />
                 <div className="px-8 md:px-32 lg:px-40 pt-32 bg-gray-300">
-                    <div className="container mx-auto px-4 lg:px-30 xl:px-48">
+                    <div className="container mx-auto">
                         <div>
                             <div className="flex flex-wrap">
                                 <PortfolioTile image="/berlioz.jpg" title="Recommendation system for smarthome" date="February 2023" a="/portfolio/5">

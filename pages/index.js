@@ -38,7 +38,7 @@ export default function Resume() {
                             </g><g className="parallax">
                                 <use href="#wave_reverse" x="0" y="0" fill="rgba(209, 213, 219, 0.2)" />
                                 <use href="#wave" x="0" y="15" fill="rgba(209, 213, 219, 0.3)" />
-                                <use href="#wave_reverse" x="0" y="25" fill="rgba(209, 213, 219, 0.6)" />
+                                <   use href="#wave_reverse" x="0" y="25" fill="rgba(209, 213, 219, 0.6)" />
                                 <use href="#wave" x="0" y="45" fill="rgba(209, 213, 219, 1)" />
                             </g>
                         </svg>
@@ -48,89 +48,94 @@ export default function Resume() {
                     </div>
 
                     <div id="content" className="bg-gray-300" />
-                    <div className="px-8 md:px-32 lg:px-40 pt-16 bg-gray-300">
-                        <div className="lg:flex md:flex">
+                    <div className="px-8 md:px-16 lg:px-40 pt-16 bg-gray-300">
+                        <div className="pt-12">
+                            <h1 className="sm:pb-16 flex sm:items-center sm:justify-center lg:items-start lg:justify-start lg:mx-8 title-gradient font-bold text-4xl w-full">
+                                Hey there !
+                            </h1>
+                        </div>
+                        <div className="lg:flex">
 
-                            <div className="px-8 lg:pr-16 md:pr-16 py-12">
-                                <h1 className="title-gradient font-bold text-4xl">
-                                    Hey there, my name is Dylan
-                                </h1>
-                                <p className="text-2xl justify-center text-gray-800">
-                                    I am a Software Engineer currently finishing my studies in the MSE Master of HES-SO.
-                                    I gained Work experience in multiple projects in various programming languages during my studies, spare time,  and internship in Bath (UK).
+                            <div className="sm:pb-12 lg:pb-0 px-8 lg:pr-16 md:pr-8">
+
+                                <p className="sm:text-lg md:text-xl lg:text-2xl text-justify text-gray-800">
+                                    My name is Dylan and I am a Software Engineer currently finishing my studies in the MSE Master of HES-SO.
+                                    I gained work experience in multiple projects in various programming languages during my studies, spare time,  and internship in Bath (UK).
                                     I love to learn new things and to travel with my friends around our beautiful planet. On this website you will find a small resume about my history and my portfolio.
-                                    about me.
+                                    <br/>
+                                    <br/>
+                                    Currently I am learning how to implement neural network, more precisely to do forecast predictions with LSTM.
                                 </p>
                             </div>
-                            <img className="rounded-xl" width="400px" src="/me.png" />
+                            <div className="flex-none flex items-center justify-center w-128">
+                                <img className="rounded-xl object-contain h-64" src="/me.png" />
+                            </div>
                         </div>
-                        <div className="grid grid-flow-col grod-rows-4 grid-cols-12 gap-32 px-8 pt-32">
+                        <div className="lg:flex md:flex items-center justify-center">
 
-                            <div className="row-start-1 col-start-1 col-span-2 h-auto">
+                            {/* <div className="h-auto">
                                 <span className="inline-block align-middle">
-                                    <img width="400" height="300" src="/relax.png" />
+                                    <img className="object-contain w-48" src="/relax.png" />
                                 </span>
-                            </div>
-                            <div className="row-start-1 col-start-3 col-span-10">
+                            </div> */}
 
-                                {/*<h1 className="font-bold text-4xl text-green-700 pb-5 pl-10">
-                                    Experience
-                        </h1>*/}
-                                <Timeline orientation="right">
-                                    <>
-                                        <h2 className="font-bold text-2xl text-gray-300 pb-2">Scientific collaborator @ iSIS</h2>
-                                        <p className="text-xl text-gray-300">
-                                            Lorem ipsum </p>
-                                        <p className="text-xl text-gray-300"> 
+                            <Timeline orientation="right">
+                                <>
+                                    <h2 className="font-bold sm:text-lg md:text-xl lg:text-2xl text-gray-300 sm:pb-4 md:pb-4 lg:pb-2">Scientific collaborator @ iSIS</h2>
+                                    <p className="text-xl text-gray-300">
+                                        Lorem ipsum </p>
+                                    <p className="text-xl text-gray-300">
                                         dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        </p>
-                                    </>
-                                    <>
-                                        <h2 className="font-bold text-2xl text-gray-300 pb-2">Software developer @ HumanTech</h2>
-                                        <p className="text-xl text-gray-300">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        </p>
-                                    </>
-                                    <>
-                                        <h2 className="font-bold text-2xl text-gray-300 pb-2">Scout @ Swiss army</h2>
-                                        <p className="text-xl text-gray-300">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        </p>
-                                    </>
-                                    <>
-                                        <h2 className="font-bold text-2xl text-gray-300 pb-2">Software developer @ Votion</h2>
-                                        <p className="text-xl text-gray-300">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        </p>
-                                    </>
+                                    </p>
+                                </>
+                                <>
+                                    <h2 className="font-bold sm:text-lg md:text-xl lg:text-2xl text-gray-300 sm:pb-4 md:pb-4 lg:pb-2">Software developer @ HumanTech</h2>
+                                    <p className="text-xl text-gray-300">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </p>
+                                </>
+                                <>
+                                    <h2 className="font-bold sm:text-lg md:text-xl lg:text-2xl text-gray-300 sm:pb-4 md:pb-4 lg:pb-2">Scout @ Swiss army</h2>
+                                    <p className="text-xl text-gray-300">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </p>
+                                </>
+                                <>
+                                    <h2 className="font-bold sm:text-lg md:text-xl lg:text-2xl text-gray-300 sm:pb-4 md:pb-4 lg:pb-2">Software developer @ Votion</h2>
+                                    <p className="text-xl text-gray-300">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </p>
+                                </>
 
-                                </Timeline>
-                            </div>
-                            <div className="row-start-2 col-start-1 col-span-10">
-                                {/*<h1 className="font-bold text-4xl text-green-700 pb-5 pl-10">
-                                    Education
-                    </h1>*/}
-                                <Timeline orientation="left">
-                                    <div>
-                                        <h2 className="font-bold text-2xl text-gray-300 pb-2">Bachelor of Sciences</h2>
-                                        <p className="text-xl text-gray-300">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        </p>
-                                    </div>
-                                    <div>
-                                        <h2 className="font-bold text-2xl text-gray-300 pb-2">IT Apprenticeship</h2>
-                                        <p className="text-xl text-gray-300">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        </p>
-                                    </div>
-                                </Timeline>
+                            </Timeline>
+                        </div>
+                        <div className="lg:flex md:flex pb-20">
+                            <Timeline orientation="left">
+                                <div>
+                                    <h2 className="font-bold sm:text-lg md:text-xl lg:text-2xl text-gray-300 sm:pb-4 md:pb-4 lg:pb-2">Master MSE in Computer Science @ HES-SO</h2>
+                                    <p className="text-xl text-gray-300">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </p>
+                                </div>
+                                <div>
+                                    <h2 className="font-bold sm:text-lg md:text-xl lg:text-2xl text-gray-300 sm:pb-4 md:pb-4 lg:pb-2">Bachelor of Sciences @ HEIA-FR</h2>
+                                    <p className="text-xl text-gray-300">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </p>
+                                </div>
+                                <div>
+                                    <h2 className="font-bold sm:text-lg md:text-xl lg:text-2xl text-gray-300 sm:pb-4 md:pb-4 lg:pb-2">IT Apprenticeship @ EMF</h2>
+                                    <p className="text-xl text-gray-300">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </p>
+                                </div>
+                            </Timeline>
 
-                            </div>
 
-                            <div className="row-start-2 col-start-11 col-span-2">
+                            {/* <div className="">
                                 <img className="mx-auto rounded-xl" width="400" height="300" src="/book.png" />
 
-                            </div>
+                            </div> */}
                         </div>
                         {/* <div className="lg:flex md:flex py-16">
 

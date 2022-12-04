@@ -36,7 +36,7 @@ export default function Banner({ title, subtitle }) {
     // var height = 1000
 
     const handleScroll = () => {
-        console.log("ScrollY" + window.scrollY)
+        // console.log("ScrollY" + window.scrollY)
         setScrollY(window.scrollY);
     };
 
