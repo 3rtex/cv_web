@@ -1,11 +1,10 @@
 import Link from 'next/link'
-import Image from 'next/image'
 
 export default function PortfolioTile({ title, date, image, a, children }) {
-    return <div className="flex flex-col w-full md:w-1/2 lg:w-1/3 px-4 mb-10">
+    return <div className="flex flex-col w-full md:w-1/2 lg:w-1/3 px-6 mb-10">
         <Link href={a}><a>
             <div>
-                <img className="object-cover h-48 md:h-36 xl:h-48 w-full" alt={title} src={image} />
+                <img className="object-cover h-48 md:h-36 xl:h-64 w-full" alt={title} src={image} />
             </div>
         </a></Link>
         <p className="mt-2 text-gray-500">{date}</p>
