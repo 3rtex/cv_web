@@ -4,6 +4,7 @@ import Layout from '../../components/layout'
 import { useRouter } from 'next/router'
 import { useData } from '../../components/portfolio_context'
 import Link from 'next/link'
+import ReactPlayer from 'react-player'
 
 export default function Project() {
     const router = useRouter()
@@ -48,14 +49,24 @@ export default function Project() {
                                         <div className="flex items-center justify-center">
                                             <img className="mt-6 rounded-lg object-cover w-400" alt={item.txt} src={item.img} />
                                         </div>
-                                        <p className="text-center mt-2 text-gray-500">{item.txt}</p>
+                                        <div className="text-center mt-2 text-gray-500">{item.txt}</div>
                                     </>) :
-                                    item.txt.map((text, i) => (
-                                        <p key={i} className="text-lg pt-6 text-justify text-gray-800">{text}</p>
-                                    ))}
+                                    (item.video != undefined ? (
+                                        <>
+                                            <div className="mt-6 flex items-center justify-center">
+                                                <ReactPlayer url={item.video}
+                                                    controls={true} />
+                                            </div>
+                                            <div className="text-center mt-2 text-gray-500">{item.txt}</div>
+                                        </>
+                                    ) :
+                                        item.txt.map((text, i) => (
+                                            <div key={i} className="text-lg pt-6 text-justify text-gray-800" dangerouslySetInnerHTML={{ __html: text }} />
+                                        ))
+                                    )}
                             </div>
                         ))}
-                        <p className="mt-2 text-gray-800 text-right">Authors: {d.author}</p>
+                        <p className="py-8 text-gray-800 text-right">Author(s): {d.author}</p>
                     </div>
                 </div>
 

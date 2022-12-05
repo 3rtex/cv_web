@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
-export default function PortfolioTile({ title, date, image, a, children }) {
-    return <div className="flex flex-col w-full md:w-1/2 lg:w-1/3 px-6 mb-10">
+export default function PortfolioTile({ key, title, date, image, a, children }) {
+    return <div key={key} className="flex flex-col w-full m-0 md:w-1/2 lg:w-1/3 px-6 mb-10">
         <Link href={a}><a>
             <div>
                 <img className="object-cover h-48 md:h-36 xl:h-64 w-full" alt={title} src={image} />

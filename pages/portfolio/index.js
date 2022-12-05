@@ -41,15 +41,13 @@ export default function Portfolio() {
                             Portfolio
                         </h1>
                     </div>
-                    <div className="container mx-auto">
+                    <div className="container">
                         <div>
                             <div className="flex flex-wrap">
                                 {data.map((item, i) => (
-                                    <div key={i}>
-                                        <PortfolioTile image={item.img} title={item.title} date={item.date} a={item.a != undefined ? item.a : "/portfolio/" + i}>
+                                        <PortfolioTile key={i} image={item.img} title={item.title} date={item.date} a={item.a != undefined ? item.a : "/portfolio/" + i}>
                                             {item.content_short}
                                         </PortfolioTile>
-                                    </div>
                                 ))}
                             </div>
                         </div>

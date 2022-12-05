@@ -81,40 +81,40 @@ export default function Resume() {
 
                             <Timeline orientation="right">
                                 <>
-                                    <h2 className=" font-bold sm:text-lg md:text-xl lg:text-2xl text-gray-300 pb-4 lg:pb-2 pr-6">Scientific collaborator @ iSIS</h2>
-                                    <p className="text-justify sm:text-lg md:text-xl lg:text-2xl text-gray-400 pb-2">
+                                    <h2 className=" font-bold sm:text-lg md:text-xl lg:text-2xl text-gray-200 pb-4 lg:pb-2 pr-6">Scientific collaborator @ iSIS</h2>
+                                    <p className="text-justify sm:text-lg md:text-xl lg:text-2xl text-gray-300 pb-2">
                                         Sep 2021 - Sep 2022
                                     </p>
-                                    <p className="text-justify sm:text-lg md:text-xl lg:text-2xl text-gray-300">
+                                    <p className="text-justify sm:text-lg md:text-xl lg:text-2xl text-gray-200">
                                         - Research of scientific articles about different diseases in order to design and develop predictive models in vegetable production.<br/>
                                         - Processing of vegetation images in order to use them in machine learning systems.<br/>
                                         - Evaluation of tools to prove its usability and its relevance in the teaching of programming languages.
                                     </p>
                                 </>
                                 <>
-                                    <h2 className="font-bold sm:text-lg md:text-xl lg:text-2xl text-gray-300 pb-4 lg:pb-2 pr-6">Software developer @ HumanTech</h2>
-                                    <p className="text-justify sm:text-lg md:text-xl lg:text-2xl text-gray-400 pb-2">
+                                    <h2 className="font-bold sm:text-lg md:text-xl lg:text-2xl text-gray-200 pb-4 lg:pb-2 pr-6">Software developer @ HumanTech</h2>
+                                    <p className="text-justify sm:text-lg md:text-xl lg:text-2xl text-gray-300 pb-2">
                                         Mar 2020 - Sep 2020
                                     </p>
-                                    <p className="text-justify sm:text-lg md:text-xl lg:text-2xl text-gray-300">
+                                    <p className="text-justify sm:text-lg md:text-xl lg:text-2xl text-gray-200">
                                         Part-time job on Flutter projects. Implementation of a cross-platform mobile application to display information and articles about the different institutes and the campus events in the HES-SO.
                                     </p>
                                 </>
                                 <>
-                                    <h2 className="font-bold sm:text-lg md:text-xl lg:text-2xl text-gray-300 pb-4 lg:pb-2 pr-6">Scout @ Swiss army</h2>
-                                    <p className="text-justify sm:text-lg md:text-xl lg:text-2xl text-gray-400 pb-2">
+                                    <h2 className="font-bold sm:text-lg md:text-xl lg:text-2xl text-gray-200 pb-4 lg:pb-2 pr-6">Scout @ Swiss army</h2>
+                                    <p className="text-justify sm:text-lg md:text-xl lg:text-2xl text-gray-300 pb-2">
                                         Jan 2018 - May 2018
                                     </p>
-                                    <p className="text-justify sm:text-lg md:text-xl lg:text-2xl text-gray-300">
+                                    <p className="text-justify sm:text-lg md:text-xl lg:text-2xl text-gray-200">
                                         Four months of obligatory army as a scout. Achieving the goals of the job through team cohesion, especially by pushing my own limits for the comrades was a great experience.
                                     </p>
                                 </>
                                 <>
-                                    <h2 className="font-bold sm:text-lg md:text-xl lg:text-2xl text-gray-300 pb-4 lg:pb-2 pr-6">Software developer @ Votion</h2>
-                                    <p className="text-justify sm:text-lg md:text-xl lg:text-2xl text-gray-400 pb-2">
+                                    <h2 className="font-bold sm:text-lg md:text-xl lg:text-2xl text-gray-200 pb-4 lg:pb-2 pr-6">Software developer @ Votion</h2>
+                                    <p className="text-justify sm:text-lg md:text-xl lg:text-2xl text-gray-300 pb-2">
                                         Jan 2017 - May 2017
                                     </p>
-                                    <p className="text-justify sm:text-lg md:text-xl lg:text-2xl text-gray-300">
+                                    <p className="text-justify sm:text-lg md:text-xl lg:text-2xl text-gray-200">
                                         Internship in a senior development team. Development of websites, mostly with Wordpress. Great experience to work in a foreign country and learn their culture.
                                     </p>
                                 </>
@@ -124,11 +124,11 @@ export default function Resume() {
                         <div className="lg:flex md:flex pb-20">
                             <Timeline orientation="left">
                                 <div>
-                                    <h2 className="font-bold sm:text-lg md:text-xl lg:text-2xl text-gray-300 pb-4 lg:pb-2 pr-6 lg:pl-8">Master MSE @ HES-SO</h2>
-                                    <p className="text-justify sm:text-lg md:text-xl lg:text-2xl text-gray-400 pb-2">
+                                    <h2 className="font-bold sm:text-lg md:text-xl lg:text-2xl text-gray-200 pb-4 lg:pb-2 pr-6 lg:pl-8">Master MSE @ HES-SO</h2>
+                                    <p className="text-justify sm:text-lg md:text-xl lg:text-2xl text-gray-300 pb-2">
                                         Sep 2021 - Mar 2023
                                     </p>
-                                    <p className="text-justify sm:text-lg md:text-xl lg:text-2xl text-gray-300">
+                                    <p className="text-justify sm:text-lg md:text-xl lg:text-2xl text-gray-200">
                                         Specialization in Computer Sciences<br /><br />
                                         Master project:<br />
                                         - Energy recommendation system for smart home<br /><br />
@@ -136,11 +136,11 @@ export default function Resume() {
                                     </p>
                                 </div>
                                 <div>
-                                    <h2 className="font-bold sm:text-lg md:text-xl lg:text-2xl text-gray-300 pb-4 lg:pb-2 pr-6 lg:pl-8">Bachelor of Sciences @ HEIA-FR</h2>
-                                    <p className="text-justify sm:text-lg md:text-xl lg:text-2xl text-gray-400 pb-2">
+                                    <h2 className="font-bold sm:text-lg md:text-xl lg:text-2xl text-gray-200 pb-4 lg:pb-2 pr-6 lg:pl-8">Bachelor of Sciences @ HEIA-FR</h2>
+                                    <p className="text-justify sm:text-lg md:text-xl lg:text-2xl text-gray-300 pb-2">
                                         Sep 2018 - Jul 2021
                                     </p>
-                                    <p className="text-justify sm:text-lg md:text-xl lg:text-2xl text-gray-300">
+                                    <p className="text-justify sm:text-lg md:text-xl lg:text-2xl text-gray-200">
                                         Specialization in Computer Sciences<br /><br />
                                         Semester projects:<br />
                                         - Skeleton detection on a dancing person<br />
@@ -151,11 +151,11 @@ export default function Resume() {
                                     </p>
                                 </div>
                                 <div>
-                                    <h2 className="font-bold sm:text-lg md:text-xl lg:text-2xl text-gray-300 pb-4 lg:pb-2 pr-6 lg:pl-8">IT Apprenticeship @ EMF</h2>
-                                    <p className="text-justify sm:text-lg md:text-xl lg:text-2xl text-gray-400 pb-2">
+                                    <h2 className="font-bold sm:text-lg md:text-xl lg:text-2xl text-gray-200 pb-4 lg:pb-2 pr-6 lg:pl-8">IT Apprenticeship @ EMF</h2>
+                                    <p className="text-justify sm:text-lg md:text-xl lg:text-2xl text-gray-300 pb-2">
                                         Aug 2013 - Jul 2017
                                     </p>
-                                    <p className="text-justify sm:text-lg md:text-xl lg:text-2xl text-gray-300">
+                                    <p className="text-justify sm:text-lg md:text-xl lg:text-2xl text-gray-200">
                                         Apprenticeship with integrated Technical Maturity
                                         <br />
                                         <br />
