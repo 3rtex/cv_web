@@ -329,15 +329,15 @@ a {
     position: relative;
     border-radius: 6px;
     overflow: hidden;
-    max-height: 50px;
+    /* max-height: 50px; */
     transition-property: all;
     transition-duration: 0.5s;
-    transition-timing-function: cubic-bezier(1, 1, 1, 1);
+    transition-timing-function: cubic-bezier(20, 1, 1, 20);
 }
 
-.date-content:hover {
+/* .date-content:hover {
     max-height: 500px;
-}
+} */
 
 /* END TIMELINE */
 

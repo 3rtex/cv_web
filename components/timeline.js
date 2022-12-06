@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import TimelineCard from './timeline_card';
 
 
 export default function Timeline({ orientation = "left", children }) {
@@ -43,12 +44,9 @@ export default function Timeline({ orientation = "left", children }) {
             <div className={orientation == "left" ? "timeline tl-left" : "timeline tl-right"}>
                 {children.map(c =>
                     <div key={c.id} className="date">
-                        <div className="max-h-12 sm:max-h-14 date-content"> {/*bg_gradient_hm*/}
-                            <svg className={orientation == "right" ?"absolute right-4 top-3 md:top-4 text-gray-300":"absolute left-4 top-3 md:top-4 text-gray-300"} width="24px" height="24px" viewBox="0 0 24 24"  fill="None" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M4 9L12 17L20 9" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-                            </svg>
+                        <TimelineCard orientation={orientation}>
                             {c}
-                        </div>
+                        </TimelineCard>
                     </div>)}
             </div>
         </div>

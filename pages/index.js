@@ -68,7 +68,7 @@ export default function Resume() {
                                 </p>
                             </div>
                             <div className="flex-none flex items-center justify-center w-128">
-                                <img className="rounded-xl object-contain h-64" src="/images/me.png" />
+                                <img alt="Costa Rica 2021" className="rounded-xl object-contain h-64" src="/images/me.png" />
                             </div>
                         </div>
                         <div className="lg:flex md:flex items-center justify-center">
