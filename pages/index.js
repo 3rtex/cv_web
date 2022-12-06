@@ -121,10 +121,10 @@ export default function Resume() {
 
                             </Timeline>
                         </div>
-                        <div className="lg:flex md:flex pb-20">
+                        <div className="lg:flex md:flex pb-20 items-center justify-center">
                             <Timeline orientation="left">
                                 <div>
-                                    <h2 className="font-bold sm:text-lg md:text-xl lg:text-2xl text-gray-200 pb-4 lg:pb-2 pr-6 lg:pl-8">Master MSE @ HES-SO</h2>
+                                    <h2 className="font-bold sm:text-lg md:text-xl lg:text-2xl text-gray-200 pb-4 lg:pb-2 pr-6">Master MSE @ HES-SO</h2>
                                     <p className="text-justify sm:text-lg md:text-xl lg:text-2xl text-gray-300 pb-2">
                                         Sep 2021 - Mar 2023
                                     </p>
@@ -136,7 +136,7 @@ export default function Resume() {
                                     </p>
                                 </div>
                                 <div>
-                                    <h2 className="font-bold sm:text-lg md:text-xl lg:text-2xl text-gray-200 pb-4 lg:pb-2 pr-6 lg:pl-8">Bachelor of Sciences @ HEIA-FR</h2>
+                                    <h2 className="font-bold sm:text-lg md:text-xl lg:text-2xl text-gray-200 pb-4 lg:pb-2 pr-6">Bachelor of Sciences @ HEIA-FR</h2>
                                     <p className="text-justify sm:text-lg md:text-xl lg:text-2xl text-gray-300 pb-2">
                                         Sep 2018 - Jul 2021
                                     </p>
@@ -151,7 +151,7 @@ export default function Resume() {
                                     </p>
                                 </div>
                                 <div>
-                                    <h2 className="font-bold sm:text-lg md:text-xl lg:text-2xl text-gray-200 pb-4 lg:pb-2 pr-6 lg:pl-8">IT Apprenticeship @ EMF</h2>
+                                    <h2 className="font-bold sm:text-lg md:text-xl lg:text-2xl text-gray-200 pb-4 lg:pb-2 pr-6">IT Apprenticeship @ EMF</h2>
                                     <p className="text-justify sm:text-lg md:text-xl lg:text-2xl text-gray-300 pb-2">
                                         Aug 2013 - Jul 2017
                                     </p>

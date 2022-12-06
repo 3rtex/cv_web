@@ -34,20 +34,21 @@ export default function Timeline({ orientation = "left", children }) {
         orientation = "right"
     }
 
-
-    return <div className="pt-24 xl:flex xl:pt-36">
+    return <div className="flex-auto pt-24 xl:flex xl:pt-36">
         {orientation == "right" ?
             <h1 className="pb-12 xl:py-0 flex items-center justify-center title-gradient font-bold text-4xl sm:mx-8">
                 {txt}
             </h1> : <></>}
-        <div className="-ml-2 -mr-8 pt-4 sm:mx-4 sm:ml-8 lg:mr-8 lg:ml-24 xl:mx-20">
+        <div className="flex-auto -ml-2 -mr-8 pt-4 sm:mx-4 sm:ml-8 lg:mr-8 lg:ml-24 xl:mx-12">
             <div className={orientation == "left" ? "timeline tl-left" : "timeline tl-right"}>
-                {children.map(c =>
-                    <div key={c.id} className="date">
-                        <TimelineCard orientation={orientation}>
+                {children.map((c, i) =>
+                    <div key={i} className="date">
+                        <TimelineCard orientation={orientation} init={i==0}>
                             {c}
-                        </TimelineCard>
-                    </div>)}
+                        </TimelineCard> 
+
+                    </div>
+                )}
             </div>
         </div>
         {orientation == "left" ?
