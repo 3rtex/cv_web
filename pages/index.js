@@ -49,7 +49,7 @@ export default function Resume() {
                     </div>
 
                     <div id="content" className="bg-gray-200" />
-                    <div className="px-8 md:px-16 xl:px-32 2xl:px-64 py-16 bg-gray-200">
+                    <div className="px-8 md:px-16 xl:px-32 2xl:px-64 3xl:px-80 4xl:px-96 py-16 bg-gray-200">
                         <div className="pt-12">
                             <h1 className="pb-16 flex items-center justify-center lg:items-start lg:justify-start lg:mx-8 title-gradient font-bold text-4xl w-full">
                                 Hey there !
