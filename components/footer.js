@@ -3,7 +3,7 @@ import Link from 'next/link'
 export default function Footer({ }) {
 
     return <div>
-        <div className="text-gray-100 bg-gray-700 grid place-items-center -mt-1">
+        <div className="text-gray-100 bg-gray-700 grid place-items-center pt-16">
             <div className="flex-shrink">
                 <div className="grid place-items-center">
                     <h1 className="text-4xl text-gray-100">

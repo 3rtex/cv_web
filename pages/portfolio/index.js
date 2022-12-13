@@ -35,7 +35,7 @@ export default function Portfolio() {
                 </div>
 
                 <div id="content" className="bg-gray-200" />
-                <div className="px-8 md:px-32 lg:px-40 pt-16 bg-gray-200">
+                <div className="px-8 md:px-32 lg:px-40 py-16 bg-gray-200">
                     <div className="px-6 py-12">
                         <h1 className=" flex items-center justify-center lg:items-start lg:justify-start lg:mx-8 title-gradient font-bold text-4xl w-full">
                             Portfolio
@@ -54,11 +54,11 @@ export default function Portfolio() {
                     </div>
                 </div>
 
-                <div className="text-gray-200 bg-gray-700">
+                {/* <div className="text-gray-200 bg-gray-700">
                     <svg viewBox="0 40 800 70">
                         <path fill="currentColor" fillOpacity="1" d="M 0 60 C 60 150 600 0 800 100 L 800 0 L 0 0 L 0 50"></path>
                     </svg>
-                </div>
+                </div> */}
                 <Footer />
             </Layout>
         </>

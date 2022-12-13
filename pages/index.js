@@ -2,6 +2,7 @@ import Banner from '../components/banner'
 import Footer from '../components/footer'
 import Layout from '../components/layout'
 import Timeline from '../components/timeline'
+import TimelineContent from '../components/timeline_content'
 
 
 export default function Resume() {
@@ -48,7 +49,7 @@ export default function Resume() {
                     </div>
 
                     <div id="content" className="bg-gray-200" />
-                    <div className="px-8 md:px-16 lg:px-40 pt-16 bg-gray-200">
+                    <div className="px-8 md:px-16 xl:px-32 2xl:px-64 py-16 bg-gray-200">
                         <div className="pt-12">
                             <h1 className="pb-16 flex items-center justify-center lg:items-start lg:justify-start lg:mx-8 title-gradient font-bold text-4xl w-full">
                                 Hey there !
@@ -56,7 +57,7 @@ export default function Resume() {
                         </div>
                         <div className="pt-6 lg:flex">
 
-                            <div className="pb-12 lg:pb-0 px-0 md:px-8 lg:pr-16 md:pr-8">
+                            <div className="pb-12 lg:pb-0 px-0 md:px-8 lg:pr-12 xl:pr-20 2xl:pr-24 md:pr-8">
 
                                 <p className="sm:text-lg md:text-xl lg:text-2xl text-justify text-gray-800">
                                     My name is Dylan and I am a Software Engineer currently finishing my studies in the MSE Master of HES-SO.
@@ -68,192 +69,63 @@ export default function Resume() {
                                 </p>
                             </div>
                             <div className="flex-none flex items-center justify-center w-128">
-                                <img alt="Costa Rica 2021" className="rounded-xl object-contain h-64" src="/images/me.png" />
+                                <img alt="Costa Rica 2021" className="rounded-xl object-contain h-64 xl:h-80" src="/images/me.png" />
                             </div>
                         </div>
                         <div className="lg:flex md:flex items-center justify-center">
-
-                            {/* <div className="h-auto">
-                                <span className="inline-block align-middle">
-                                    <img className="object-contain w-48" src="/relax.png" />
-                                </span>
-                            </div> */}
-
                             <Timeline orientation="right">
-                                <>
-                                    <h2 className=" font-bold sm:text-lg md:text-xl lg:text-2xl text-gray-200 pb-4 lg:pb-2 pr-6">Scientific collaborator @ iSIS</h2>
-                                    <p className="text-justify sm:text-lg md:text-xl lg:text-2xl text-gray-300 pb-2">
-                                        Sep 2021 - Sep 2022
-                                    </p>
-                                    <p className="text-justify sm:text-lg md:text-xl lg:text-2xl text-gray-200">
-                                        - Research of scientific articles about different diseases in order to design and develop predictive models in vegetable production.<br/>
-                                        - Processing of vegetation images in order to use them in machine learning systems.<br/>
-                                        - Evaluation of tools to prove its usability and its relevance in the teaching of programming languages.
-                                    </p>
-                                </>
-                                <>
-                                    <h2 className="font-bold sm:text-lg md:text-xl lg:text-2xl text-gray-200 pb-4 lg:pb-2 pr-6">Software developer @ HumanTech</h2>
-                                    <p className="text-justify sm:text-lg md:text-xl lg:text-2xl text-gray-300 pb-2">
-                                        Mar 2020 - Sep 2020
-                                    </p>
-                                    <p className="text-justify sm:text-lg md:text-xl lg:text-2xl text-gray-200">
-                                        Part-time job on Flutter projects. Implementation of a cross-platform mobile application to display information and articles about the different institutes and the campus events in the HES-SO.
-                                    </p>
-                                </>
-                                <>
-                                    <h2 className="font-bold sm:text-lg md:text-xl lg:text-2xl text-gray-200 pb-4 lg:pb-2 pr-6">Scout @ Swiss army</h2>
-                                    <p className="text-justify sm:text-lg md:text-xl lg:text-2xl text-gray-300 pb-2">
-                                        Jan 2018 - May 2018
-                                    </p>
-                                    <p className="text-justify sm:text-lg md:text-xl lg:text-2xl text-gray-200">
-                                        Four months of obligatory army as a scout. Achieving the goals of the job through team cohesion, especially by pushing my own limits for the comrades was a great experience.
-                                    </p>
-                                </>
-                                <>
-                                    <h2 className="font-bold sm:text-lg md:text-xl lg:text-2xl text-gray-200 pb-4 lg:pb-2 pr-6">Software developer @ Votion</h2>
-                                    <p className="text-justify sm:text-lg md:text-xl lg:text-2xl text-gray-300 pb-2">
-                                        Jan 2017 - May 2017
-                                    </p>
-                                    <p className="text-justify sm:text-lg md:text-xl lg:text-2xl text-gray-200">
-                                        Internship in a senior development team. Development of websites, mostly with Wordpress. Great experience to work in a foreign country and learn their culture.
-                                    </p>
-                                </>
-
+                                <TimelineContent title="Scientific collaborator @ iSIS" date="Sep 2021 - Sep 2022">
+                                    - Research of scientific articles about different diseases in order to design and develop predictive models in vegetable production.<br />
+                                    - Processing of vegetation images in order to use them in machine learning systems.<br />
+                                    - Evaluation of tools to prove its usability and its relevance in the teaching of programming languages.
+                                </TimelineContent>
+                                <TimelineContent title="Software developer @ HumanTech" date="Mar 2020 - Sep 2020">
+                                    Part-time job on Flutter projects. Implementation of a cross-platform mobile application to display information and articles about the different institutes and the campus events in the HES-SO.
+                                </TimelineContent>
+                                <TimelineContent title="Scout @ Swiss army" date="Jan 2018 - May 2018">
+                                    Four months of obligatory army as a scout. Achieving the goals of the job through team cohesion, especially by pushing my own limits for the comrades was a great experience.
+                                </TimelineContent>
+                                <TimelineContent title="Software developer @ Votion" date="Jan 2017 - May 2017">
+                                    Internship in a senior development team. Development of websites, mostly with Wordpress. Great experience to work in a foreign country and learn the UK culture.
+                                </TimelineContent>
                             </Timeline>
                         </div>
                         <div className="lg:flex md:flex pb-20 items-center justify-center">
                             <Timeline orientation="left">
-                                <div>
-                                    <h2 className="font-bold sm:text-lg md:text-xl lg:text-2xl text-gray-200 pb-4 lg:pb-2 pr-6">Master MSE @ HES-SO</h2>
-                                    <p className="text-justify sm:text-lg md:text-xl lg:text-2xl text-gray-300 pb-2">
-                                        Sep 2021 - Mar 2023
-                                    </p>
-                                    <p className="text-justify sm:text-lg md:text-xl lg:text-2xl text-gray-200">
-                                        Specialization in Computer Sciences<br /><br />
-                                        Master project:<br />
-                                        - Energy recommendation system for smart home<br /><br />
-                                        GPA: 5.6/6
-                                    </p>
-                                </div>
-                                <div>
-                                    <h2 className="font-bold sm:text-lg md:text-xl lg:text-2xl text-gray-200 pb-4 lg:pb-2 pr-6">Bachelor of Sciences @ HEIA-FR</h2>
-                                    <p className="text-justify sm:text-lg md:text-xl lg:text-2xl text-gray-300 pb-2">
-                                        Sep 2018 - Jul 2021
-                                    </p>
-                                    <p className="text-justify sm:text-lg md:text-xl lg:text-2xl text-gray-200">
-                                        Specialization in Computer Sciences<br /><br />
-                                        Semester projects:<br />
-                                        - Skeleton detection on a dancing person<br />
-                                        - Profiling and industrial vision processing pipeline<br /><br />
-                                        Bachelor project:<br />
-                                        - Pet follow-up cross-platform application<br /><br />
-                                        Grade: GPA 5.5/6
-                                    </p>
-                                </div>
-                                <div>
-                                    <h2 className="font-bold sm:text-lg md:text-xl lg:text-2xl text-gray-200 pb-4 lg:pb-2 pr-6">IT Apprenticeship @ EMF</h2>
-                                    <p className="text-justify sm:text-lg md:text-xl lg:text-2xl text-gray-300 pb-2">
-                                        Aug 2013 - Jul 2017
-                                    </p>
-                                    <p className="text-justify sm:text-lg md:text-xl lg:text-2xl text-gray-200">
-                                        Apprenticeship with integrated Technical Maturity
-                                        <br />
-                                        <br />
-                                        Final work nominated for the ICT Awards 2017:
-                                        <br />
-                                        - FLIR thermal camera mobile application to evaluate the heat loss on building
-                                        <br />
-                                        <br />
-                                        GPA: 5.7/6
-                                    </p>
-                                </div>
+                                <TimelineContent title="Master MSE @ HES-SO" date="Sep 2021 - Mar 2023">
+                                    Specialization in Computer Sciences<br /><br />
+                                    Master project:<br />
+                                    - Energy recommendation system for smart home<br /><br />
+                                    GPA: 5.6/6
+                                </TimelineContent>
+                                <TimelineContent title="Bachelor of Sciences @ HEIA-FR" date="Sep 2018 - Jul 2021">
+                                    Specialization in Computer Sciences<br /><br />
+                                    Semester projects:<br />
+                                    - Skeleton detection on a dancing person<br />
+                                    - Profiling and industrial vision processing pipeline<br /><br />
+                                    Bachelor project:<br />
+                                    - Pet follow-up cross-platform application<br /><br />
+                                    GPA 5.5/6
+                                </TimelineContent>
+                                <TimelineContent title="IT Apprenticeship @ EMF" date="Aug 2013 - Jul 2017">
+                                    Apprenticeship with integrated Technical Maturity
+                                    <br />
+                                    <br />
+                                    Final work nominated for the ICT Awards 2017:
+                                    <br />
+                                    - FLIR thermal camera mobile application to evaluate the heat loss on building
+                                    <br />
+                                    <br />
+                                    GPA: 5.7/6
+                                </TimelineContent>
                             </Timeline>
-
-
-                            {/* <div className="">
-                                <img className="mx-auto rounded-xl" width="400" height="300" src="/book.png" />
-
-                            </div> */}
                         </div>
-                        {/* <div className="lg:flex md:flex py-16">
-
-                            <div className="px-8 lg:pr-16 md:pr-16 py-12">
-                                <h1 className="title-gradient font-bold text-4xl">
-                                    This is my lovely cat
-                                </h1>
-                                <p className="text-2xl justify-center text-gray-800">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                </p>
-                            </div>
-                            <img className="mx-auto rounded-xl" width="372" height="362" src="/berlioz.jpg" />
-
-                        </div> */}
                     </div>
 
-
-                    <div className="text-gray-200 bg-gray-700">
-                        <svg viewBox="0 40 800 70">
-                            <path fill="currentColor" fillOpacity="1" d="M 0 60 C 60 150 600 0 800 100 L 800 0 L 0 0 L 0 50"></path>
+                    {/* <div className="bg-gray-700 text-gray-200">
+                        <svg style={{transform: "rotate(180)"}} viewBox="0 40 800 70">
+                            <path  fill="currentColor" fillOpacity="1" d="M 0 60 C 60 150 600 0 800 100 L 800 0 L 0 0 L 0 50"></path>
                         </svg>
-                    </div>
-
-                    {/* <div className="grid grid-flow-col grod-rows-4 grid-cols-12 gap-16 mx-auto">
-                        <div className="row-start-1 col-start-1 col-span-12 md:flex shadow-2xl rounded-xl bg-gray-300">
-                            <div className="px-14 py-12">
-                                <h1 className="font-bold text-4xl text-green-700">
-                                    Hey there, my name is Dylan Mamié
-                                </h1>
-                                <p className="text-2xl pt-8 justify-center text-gray-800">
-                                    Software Engineer graduate currently continuing my studies in the MSE Master of HES-SO.
-                                    I gained Work experience in multiple projects in various programming languages during my studies and internship in Bath (UK).
-                                    Fast learner, eager to take on new challenges, successful working in both team and self-directed settings.
-                                </p>
-                            </div>
-                            <img className="rounded-r-xl" width="400" height="300" src="/me.png" />
-
-                        </div>
-                        <div className="row-start-2 col-start-1 col-span-4 md:flex shadow-2xl rounded-xl bg-gray-300">
-                            <div className="px-14 py-12">
-                                <h1 className="font-bold text-4xl text-green-700">
-                                    Languages
-                                </h1>
-                            </div>
-                        </div>
-                        <div className="row-start-2 col-start-5 col-span-8 md:flex shadow-2xl rounded-xl bg-gray-300">
-                            <div className="px-14 py-12">
-                                <h1 className="font-bold text-4xl text-green-700">
-                                    Education
-                                </h1>
-                            </div>
-                        </div>
-                        <div className="row-start-3 col-start-1 col-span-8 md:flex shadow-2xl rounded-xl bg-gray-300">
-                            <div className="px-14 py-12">
-                                <h1 className="font-bold text-4xl text-green-700">
-                                    Work experience
-                                </h1>
-                            </div>
-                        </div>
-                        <div className="row-start-3 col-start-9 col-span-4 md:flex shadow-2xl rounded-xl bg-gray-300">
-                            <div className="px-14 py-12">
-                                <h1 className="font-bold text-4xl text-green-700">
-                                    Interests
-                                </h1>
-                            </div>
-                        </div>
-                        <div className="row-start-4 col-start-1 col-span-6 md:flex shadow-2xl rounded-xl bg-gray-300">
-                            <div className="px-14 py-12">
-                                <h1 className="font-bold text-4xl text-green-700">
-                                    Technical Skills
-                                </h1>
-                            </div>
-                        </div>
-                        <div className="row-start-4 col-start-7 col-span-6 md:flex shadow-2xl rounded-xl bg-gray-300">
-                            <div className="px-14 py-12">
-                                <h1 className="font-bold text-4xl text-green-700">
-                                    Soft Skills
-                                </h1>
-                            </div>
-                        </div>
                     </div> */}
                 </div>
             </Layout>
