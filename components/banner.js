@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import Link from 'next/link'
-import { useRouter } from "next/router";
 import NavigatorBar from './navbar';
 
 var i = 0;

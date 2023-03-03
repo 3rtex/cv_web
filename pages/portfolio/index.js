@@ -35,19 +35,20 @@ export default function Portfolio() {
                 </div>
 
                 <div id="content" className="bg-gray-200" />
-                <div className="px-8 md:px-32 lg:px-40 py-16 bg-gray-200">
-                    <div className="px-6 py-12">
-                        <h1 className=" flex items-center justify-center lg:items-start lg:justify-start lg:mx-8 title-gradient font-bold text-4xl w-full">
-                            Portfolio
-                        </h1>
-                    </div>
+                <div className="px-8 md:px-32 lg:px-40 py-16 bg-gray-200 flex justify-center">
                     <div className="container">
+
+                        <div className="px-6 py-12">
+                            <h1 className=" flex items-center justify-center lg:items-start lg:justify-start lg:mx-8 title-gradient font-bold text-4xl w-full">
+                                Portfolio
+                            </h1>
+                        </div>
                         <div>
                             <div className="flex flex-wrap">
                                 {data.map((item, i) => (
-                                        <PortfolioTile key={i} image={item.img} title={item.title} date={item.date} a={item.a != undefined ? item.a : "/portfolio/" + i}>
-                                            {item.content_short}
-                                        </PortfolioTile>
+                                    <PortfolioTile key={i} image={item.img} title={item.title} date={item.date} a={item.a != undefined ? item.a : "/portfolio/" + i}>
+                                        {item.content_short}
+                                    </PortfolioTile>
                                 ))}
                             </div>
                         </div>
