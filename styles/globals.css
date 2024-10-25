@@ -38,6 +38,7 @@ a {
 }
 
 .text-gradient {
+    padding-bottom: 4px;
     font-size: 1.75rem;
     line-height: 1  ;
 

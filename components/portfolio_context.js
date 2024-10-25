@@ -2,25 +2,54 @@ import React, { useContext, useState } from 'react'
 
 export const portfolio_data = [
     {
+        img: '/images/wallis.jpg',
+        title: 'OnlineVS',
+        date: 'November 2024',
+        content_short: 'Wallis cantonal portal. Installation of the portal and implementation with Angular and .Net of major parts necessaries to make it online. Worked for 1 year on it. Not yet in production.',
+        a: 'https://online.vs.ch/'
+    },
+    {
+        img: '/images/egovfr.png',
+        title: 'EgovFr',
+        date: 'November 2024',
+        content_short: 'Fribourg cantonal portal. I mostly did service evolution, maintenance but also developped few new services with Angular and .Net for almost 2 years.',
+        a: 'https://egov.fr.ch/'
+    },
+    {
+        img: '/images/bot.png',
+        title: 'Onlinetool klimaanpassung',
+        date: 'October 2023',
+        content_short: 'Climate Change Adaptation – Online Tool for Municipalities. I implemented few pages with Angular and .Net.',
+        a: 'https://www.onlinetool-klimaanpassung.ch/'
+    },
+    {
         img: '/images/smart-home.png',
         title: 'Energy recommendation system for smarthome',
-        type: 'Semester project and then it continues in the Master project',
+        type: 'Semester project and then continued as Master project',
         date: 'February 2023',
         content_short: 'A system implemented in Python suggesting recommendation to optimize the use of the solar panels.',
-        author: 'Dylan Mamié',
+        author: 'Dylan Mamie',
         content_long: [
             {
-                txt: ['We have a smart home equiped with solar panel but no battery to keep the energy. Sensors have been installed in the house and we want to implement a recommendation system that maximize the use of the solar panels and help reduce the energy consumption.',
-                    'The goal of this project is to analyze existing methods for recommendation systems, especially for smart homes, based on the different sensors present. The objective would be to develop an entire pipeline processing the received data to then indicate to the user recommendations allowing to optimize its electrical energy consumption while promoting the use of the solar panel green energy.',
-                    'We can see below the pipeline imagined for this project.'],
+                txt: [
+                    'We had a smart home equipped with solar panels but no battery storage. Sensors have been installed throughout the house, and we aim to implement a recommendation system to maximize solar panel usage and reduce overall energy consumption.',
+                    'The goal of this project is to analyze existing methods for recommendation systems, especially in smart homes, using data from various sensors. The objective is to develop a complete pipeline that processes the incoming data and provides the user with recommendations to optimize electrical energy consumption, while prioritizing the use of clean energy from solar panels.',
+                    'The project consisted of four main phases: needs analysis, design, development, and evaluation. During the analysis phase, we explored various recommendation techniques, focusing on incorporating user habits to optimize energy use. We chose a knowledge-based approach for its flexibility in adding rules that could improve optimization. We also examined multi-approach architectures and ranking methods such as TOPSIS to filter and prioritize the recommendations.',
+                    'In the design phase, we defined the system scenarios, created a use-case diagram, and developed the architecture, inspired by analyzed frameworks. The recommendation system was conceptualized as a data processing pipeline, from data collection to sending tailored recommendations to the user, with feedback integrated into the process. Below is the pipeline designed for this project.'
+                ]
             },
             {
                 img: '/images/smart-home_pipeline.png',
-                txt: 'Figure 1: pipeline of the recommendation system'
+                txt: 'Figure 1: Pipeline of the recommendation system'
             },
-
-            { txt: ['// WIP: we will update this entry at the end of the project'], },
-
+            {  
+                txt: [
+                    'Development began with data analysis to identify energy usage patterns, where we discovered a recurring 3 kWh consumption every three hours, which could not be linked to specific activities. To address this, we plan to incorporate a NILM (Non-Intrusive Load Monitoring) model in future iterations to improve data accuracy. We refined the system based on previous projects, following an iterative approach to achieve the best results.',
+                    'Finally, the implemented features were evaluated, showing promising outcomes despite some challenges, such as the lack of client information about certain energy consumption patterns. The primary project goals were met, including running previous scripts, exploring new data, researching solutions, developing a user questionnaire, and building and assessing the recommendation system.',
+                    'Future steps involve implementing a NILM model for better data understanding, considering weekly trends, adding feedback mechanisms, and developing a web application for data visualization to enhance user interaction and system adaptability.',
+                    ''
+                ],
+            }
         ]
 
     },
@@ -30,7 +59,7 @@ export const portfolio_data = [
         type: 'Semester project',
         date: 'January 2022',
         content_short: 'Detection of amphibian on pictures to prove the use of the construction of passage under the roads for them. There is a movement sensor triggering the image capture whenever something move in the tunnel.',
-        author: 'Joé Donzallaz, Jérôme Vial, Dylan Mamié',
+        author: 'Joé Donzallaz, Jérôme Vial, Dylan Mamie',
         content_long: [
             {
                 txt: ['The canton of Vaud has built several tunnels under the road in the commune of Gimel, to allow animals to cross safely. In order to justify the costs of this project, cameras have been installed to count the number of animal crossings. These cameras are programmed to take a series of pictures when a movement is detected, either during the day or at night (figure 1).',
@@ -64,7 +93,7 @@ export const portfolio_data = [
         type: 'Bachelor project',
         date: 'July 2021',
         content_short: 'A Flutter application with a Laravel backend to help take care of pets. We used an authentication system with Google and Facebook accounts. The designs were given.',
-        author: 'Dylan Mamié',
+        author: 'Dylan Mamie',
         content_long: [
             {
                 txt: [
@@ -98,7 +127,7 @@ export const portfolio_data = [
         type: 'Semester project',
         date: 'Mai 2021',
         content_short: 'Project with Asyril SA with the aim to profile the C++ code of a vision processing pipeline on one of their product.',
-        author: 'Dylan Mamié',
+        author: 'Dylan Mamie',
         content_long: [
             {
                 txt: ['The EYE+ product from <a style="color:green" href="https://asyril.com/">Asyril SA</a> allows sorting small parts using shaking, a camera and a robotic arm. There is a robotic arm that takes the small parts to put them in containers if they are oriented correctly. In order for this procedure to be carried out properly, the project has a vision pipeline. This one takes care of detecting the parts and checking that they are good, i.e. oriented in the right direction and on the right side, to then indicate to the robotic arm that it can move them.'],
@@ -127,14 +156,13 @@ export const portfolio_data = [
             },
         ],
     },
-
     {
         img: '/images/skeleton_detection.png',
         title: 'Skeleton detection',
         type: 'Semester project',
         date: 'Mai 2021',
         content_short: 'Detection of the skeleton of a dancer in order to detect the emotions emerging. We also had to see if we could check the skeleton on the shadow of the dancer. Implemented in Python.',
-        author: 'Jérôme Vial, Dylan Mamié',
+        author: 'Jérôme Vial, Dylan Mamie',
         content_long: [
             {
                 txt: ['The <a style="color:green" href="https://humantech.institute/">HumanTech institute</a> captured many video of a dancer dancing in front of a big curtain. The first goal of this project was to detect the skeleton of the dancer on the normal side and also on the shadow side. The second goal was to imagine a way to asign emotions to the movements.',
@@ -161,7 +189,7 @@ export const portfolio_data = [
         title: 'Lez\'Dance',
         date: 'July 2018',
         content_short: 'Website for the Lez\'Dance line dance group, written in plain HTML, CSS and JS. It contains galleries of pictures and choregraphies of dances. We used PHP scripts to upload the pictures and choregraphies.',
-        a: 'http://lez-dance.ch/',
+        a: 'https://lez-dance.ch/',
     },
     {
         img: '/images/emf-ddc2.png',
@@ -169,7 +197,7 @@ export const portfolio_data = [
         type: 'Apprenticeship final project',
         date: 'July 2017',
         content_short: 'Final work of apprenticeship nominated for the ICT Awards 2017. Android application that used a thermal FLIR camera to detect the heat loss on building.',
-        author: 'Dylan Mamié',
+        author: 'Dylan Mamie',
         content_long: [
             {
                 txt: ['The goal of this project is to allow users to take thermal photos using an Android smartphone and a <a style="color:green" href="https://www.flir.com/">FLIR One</a> thermal camera that will plug into the micro-USB port of the cell phone. It will then allow the user to save their photos on a server to keep their images in a safe place and available from anywhere.',

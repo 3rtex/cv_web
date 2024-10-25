@@ -9,6 +9,9 @@ var write = true;
 
 
 function typeWriter() {
+    if(document.getElementById("subtitle") == null)
+        return;
+
     if (write && i < subtitles[j].length) {
         document.getElementById("subtitle").innerHTML += subtitles[j].charAt(i);
         i++;

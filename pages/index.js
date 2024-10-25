@@ -3,28 +3,17 @@ import Footer from '../components/footer'
 import Layout from '../components/layout'
 import Timeline from '../components/timeline'
 import TimelineContent from '../components/timeline_content'
+import Link from 'next/link'
 
 
 export default function Resume() {
     return (
         <>
             <Layout>
-                <Banner title={"Dylan Mamié"} subtitle={["Welcome to my website !", "Software Engineer based in Switzerland."]} />
+                <Banner title={"Welcome"} subtitle={["Hi.", "Software Engineer based in Switzerland."]} />
 
 
                 <div>
-
-                    {/* <div className="-mt-64 md:-mt-48 lg:-mt-32 p-48 absolute left-0 right-0 mx-auto flex justify-center">
-                        <Link href="#content">
-                            <a>
-                                <div className="grid place-items-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 md:h-12 md:w-12 lg:h-16 lg:w-16 text-gray-300 hover:text-green-500" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fillRule="evenodd" d="M15.707 4.293a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 011.414-1.414L10 8.586l4.293-4.293a1 1 0 011.414 0zm0 6a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 111.414-1.414L10 14.586l4.293-4.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                                    </svg>
-                                </div>
-                            </a>
-                        </Link>
-                    </div> */}
                     <div className="text-gray-200 -mt-32 md:-mt-48 lg:-mt-64">
                         <svg className="waves" viewBox="0 0 1200 275" preserveAspectRatio="none" shapeRendering="auto">
                             <defs>
@@ -60,12 +49,16 @@ export default function Resume() {
                             <div className="pb-12 lg:pb-0 px-0 md:px-8 lg:pr-12 xl:pr-20 2xl:pr-24 md:pr-8">
 
                                 <p className="sm:text-lg md:text-xl lg:text-2xl text-justify text-gray-800">
-                                    My name is Dylan and I am a Software Engineer currently finishing my studies in the MSE Master of HES-SO.
-                                    I gained work experience in multiple projects in various programming languages during my studies, spare time,  and internship in Bath (UK).
-                                    I love to learn new things and to travel with my friends around our beautiful planet. On this website you will find a small resume about my history and my portfolio.
+                                    My name is Dylan and I am a Software Engineer. In my previous jobs I assumed the role of team lead and scrum master. 
+                                    My daily tasks were mostly developping application for the governments in .NET and Angular and managing the team as the team lead.
+                                    I also configured pipelines with Azure DevOps and GitLab.
                                     <br />
                                     <br />
-                                    Currently I am learning how to implement neural network, more precisely to do forecast predictions with LSTM.
+                                    I love to learn new things and to travel with my friends. On my spare time I mostly do bouldering and motorbikes tour around Switzerland.
+                                    On this website you will find a small resume about my history and my portfolio.
+                                    <br />
+                                    <br />
+                                    Looking for new opportunities to expand my skills, please don't hesitate to <Link href="#contact" scroll={false}><a className='text-green-600'>contact me</a></Link>.
                                 </p>
                             </div>
                             <div className="flex-none flex items-center justify-center w-128">
@@ -74,13 +67,17 @@ export default function Resume() {
                         </div>
                         <div className="lg:flex md:flex items-center justify-center">
                             <Timeline orientation="right">
-                                <TimelineContent title="Scientific collaborator @ iSIS" date="Sep 2021 - Sep 2022">
+                                <TimelineContent title="Software developer & Team lead @ Softcom" date="May 2023 - Nov 2024">
+                                    - Joined an agile dev eGovernment squad as a developer.<br />
+                                    - Programming full stack application for the governments in .NET and Angular.<br />
+                                    - Since April 2024, managing as Team lead our squad, leading scrum meetings and helping the team achieves every tasks we have.
+                                </TimelineContent>
+                                <TimelineContent title="Scientific collaborator @ iSIS & Humantech" date="Mar 2020 - Mar 2023">
+                                    - Implementation of a cross-platform mobile application in Flutter to display information and articles about the different institutes and the campus events in the HES-SO.<br />
                                     - Research of scientific articles about different diseases in order to design and develop predictive models in vegetable production.<br />
                                     - Processing of vegetation images in order to use them in machine learning systems.<br />
-                                    - Evaluation of tools to prove its usability and its relevance in the teaching of programming languages.
-                                </TimelineContent>
-                                <TimelineContent title="Software developer @ HumanTech" date="Mar 2020 - Sep 2020">
-                                    Part-time job on Flutter projects. Implementation of a cross-platform mobile application to display information and articles about the different institutes and the campus events in the HES-SO.
+                                    - Evaluation of tools to prove its usability and its relevance in the teaching of programming languages.<br />
+                                    - Developping a frontend interface in NextJs for the EYE LEARN project.
                                 </TimelineContent>
                                 <TimelineContent title="Scout @ Swiss army" date="Jan 2018 - May 2018">
                                     Four months of obligatory army as a scout. Achieving the goals of the job through team cohesion, especially by pushing my own limits for the comrades was a great experience.

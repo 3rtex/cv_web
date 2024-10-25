@@ -10,7 +10,7 @@ export default function Footer({ }) {
                         Contact
                     </h1>
                 </div>
-                <div className="grid place-items-center">
+                <div id="contact" className="grid place-items-center">
                     <div className="p-5 float-right md:ml-auto flex flex-wrap">
                         <a href="mailto:mamie.dylan@gmail.com">
                             <svg xmlns="http://www.w3.org/2000/svg" className="mb-2 m-8 h-10 w-10 text-gray-200 hover:text-green-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -26,7 +26,7 @@ export default function Footer({ }) {
                     </div>
                 </div>
                 <div className="grid place-items-center pb-10">
-                    <h2>Ⓒ 2022 Dylan Mamié</h2>
+                    <h2>Ⓒ 2024 Dylan Mamie</h2>
                 </div>
             </div>
         </div>
