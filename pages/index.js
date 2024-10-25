@@ -58,7 +58,7 @@ export default function Resume() {
                                     On this website you will find a small resume about my history and my portfolio.
                                     <br />
                                     <br />
-                                    Looking for new opportunities to expand my skills, please don't hesitate to <Link href="#contact" scroll={false}><a className='text-green-600'>contact me</a></Link>.
+                                    Looking for new opportunities to expand my skills, please don&apos;t hesitate to <Link href="#contact" scroll={false}><a className='text-green-600'>contact me</a></Link>.
                                 </p>
                             </div>
                             <div className="flex-none flex items-center justify-center w-128">
